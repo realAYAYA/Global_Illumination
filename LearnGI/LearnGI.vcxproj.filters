@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\OpenGL">
+      <UniqueIdentifier>{a85cb58e-bd34-4a19-bdbe-6a56877b3c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\OpenGL">
+      <UniqueIdentifier>{334bea9c-515b-49e0-9438-25a93b0db150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\RTX">
+      <UniqueIdentifier>{a185a7a2-0ea7-4ed1-9ef3-d7f86cd69920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\RTX">
+      <UniqueIdentifier>{c593ac7c-9cfd-498a-b5d1-cbb372ff47b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\RTX\Hitable">
+      <UniqueIdentifier>{86984238-6906-4f1f-a855-f3b691fbcbb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\RTX\Scene">
+      <UniqueIdentifier>{ea2ee624-85e6-4d80-9d4d-926cca24d0a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\RTX\Hitable">
+      <UniqueIdentifier>{5320ac3e-6c65-42f5-b23f-4f0029157b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\RTX\RTXScene">
+      <UniqueIdentifier>{8bd5f24f-de8d-4cce-9eb2-35c4996c60bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base">
+      <UniqueIdentifier>{4116edc3-80b0-4056-b232-3f00e45def37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base">
+      <UniqueIdentifier>{45532c57-56f6-40cb-8f3d-dabd882bf48e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Interface">
+      <UniqueIdentifier>{a3be8f5b-2f7f-4fe6-accf-56d251eaaa14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\RTX\Materials">
+      <UniqueIdentifier>{757c4afb-66a0-490a-99e4-6328c9cd1b37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\RTX\Materials">
+      <UniqueIdentifier>{04341a6e-9752-4cc3-a151-b702e8b6eaf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\OpenGL\Texture">
+      <UniqueIdentifier>{e2ab2520-549a-407f-9082-09676a5a4dfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\OpenGL\Texture">
+      <UniqueIdentifier>{07331d16-3856-4de7-90e3-51d395531fdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\RTX\Texture">
+      <UniqueIdentifier>{ca4c94b6-2bca-4c61-8b91-d9e9fa63da02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\RTX\Texutre">
+      <UniqueIdentifier>{2112f594-7b2f-40ba-8b4d-a09475507a70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base\Math">
+      <UniqueIdentifier>{6b96a915-a59e-4a04-9c64-e0e8d3342e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\Math">
+      <UniqueIdentifier>{a1129a56-3d7e-4219-a805-44e91a2d7686}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Camera\Camera.cpp">
+      <Filter>源文件\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\FBO\FBO.cpp">
+      <Filter>源文件\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\GLFWwindow\Window.cpp">
+      <Filter>源文件\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Mesh\Mesh.cpp">
+      <Filter>源文件\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Model\Model.cpp">
+      <Filter>源文件\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Shader\Shader.cpp">
+      <Filter>源文件\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Scene\Scene.cpp">
+      <Filter>源文件\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Model\TfmObject.cpp">
+      <Filter>源文件\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonDefine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Image\Image.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\VAO\VAO.cpp">
+      <Filter>源文件\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\File\File.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Material\Isotropic.cpp">
+      <Filter>源文件\RTX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Material\Lambertian.cpp">
+      <Filter>源文件\RTX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Material\Metal.cpp">
+      <Filter>源文件\RTX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Texture\Skybox.cpp">
+      <Filter>源文件\OpenGL\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Texture\ConstTexture.cpp">
+      <Filter>源文件\RTX\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Texture\ImageTexture.cpp">
+      <Filter>源文件\RTX\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Texture\RTSkybox.cpp">
+      <Filter>源文件\RTX\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Texture\Texture.cpp">
+      <Filter>源文件\OpenGL\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Material\Dielectric.cpp">
+      <Filter>源文件\RTX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\HeapObj\HeapObj.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Hitable\AABB.cpp">
+      <Filter>源文件\RTX\Hitable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Hitable\BVH_Node.cpp">
+      <Filter>源文件\RTX\Hitable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Hitable.cpp">
+      <Filter>源文件\RTX\Hitable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Model2.cpp">
+      <Filter>源文件\RTX\Hitable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Hitable\TriMesh.cpp">
+      <Filter>源文件\RTX\Hitable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Triangle.cpp">
+      <Filter>源文件\RTX\Hitable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Hitable\MoveSphere.cpp">
+      <Filter>源文件\RTX\Hitable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Sphere.cpp">
+      <Filter>源文件\RTX\Hitable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Transform.cpp">
+      <Filter>源文件\RTX\Hitable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Math\Math.cpp">
+      <Filter>源文件\Base\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Math\Perlin.cpp">
+      <Filter>源文件\Base\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Scene\RTScene.cpp">
+      <Filter>源文件\RTX\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\CppUtil\OpenGL\Camera.h">
+      <Filter>头文件\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\FBO.h">
+      <Filter>头文件\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\Mesh.h">
+      <Filter>头文件\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\Model.h">
+      <Filter>头文件\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\Shader.h">
+      <Filter>头文件\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\Window.h">
+      <Filter>头文件\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\Object.h">
+      <Filter>头文件\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalDefines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\TfmObject.h">
+      <Filter>头文件\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\Basic\Image.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\VAO.h">
+      <Filter>头文件\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\Basic\File.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\MatVisitor.h">
+      <Filter>头文件\RTX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Dielectric.h">
+      <Filter>头文件\RTX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Isotropic.h">
+      <Filter>头文件\RTX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Lambertian.h">
+      <Filter>头文件\RTX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Material.h">
+      <Filter>头文件\RTX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Metal.h">
+      <Filter>头文件\RTX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\Skybox.h">
+      <Filter>头文件\OpenGL\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\ConstTexture.h">
+      <Filter>头文件\RTX\Texutre</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\ImageTexture.h">
+      <Filter>头文件\RTX\Texutre</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Texture.h">
+      <Filter>头文件\RTX\Texutre</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\TexVisitor.h">
+      <Filter>头文件\RTX\Texutre</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\SkyboxTexture.h">
+      <Filter>头文件\RTX\Texutre</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\Texture.h">
+      <Filter>头文件\OpenGL\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\Basic\Ptr.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\Basic\HeapObj.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\AABB.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\BVH_Node.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Hitable.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Model.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\TriMesh.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\HitableVisitor.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Triangle.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\MoveSphere.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Sphere.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\Transform.h">
+      <Filter>头文件\RTX\Hitable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\Basic\Math.h">
+      <Filter>头文件\Base\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\Basic\Perlin.h">
+      <Filter>头文件\Base\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\OpenGL\Scene.h">
+      <Filter>头文件\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CppUtil\RTX\RTScene.h">
+      <Filter>头文件\RTX\RTXScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTraversal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

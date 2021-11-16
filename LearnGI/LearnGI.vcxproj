@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{082dc2ad-59ec-4e76-b5b2-41f075f71992}</ProjectGuid>
+    <RootNamespace>LearnGI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\codes\cg\LearnGI\LearnGI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Administrator\Desktop\codes\cg\LearnGI\LearnGI\lib\SOIL;C:\Users\Administrator\Desktop\codes\cg\LearnGI\LearnGI\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\Administrator\Desktop\codes\cg\LearnGI\LearnGI\lib\glew-2.1.0\lib\Release\Win32;C:\Users\Administrator\Desktop\codes\cg\LearnGI\LearnGI\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\SOIL;C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\SOIL;C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\SOIL;C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\Desktop\codes\cg\LearnGI\LearnGI\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CommonDefine.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="SceneTraversal.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\File\File.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\HeapObj\HeapObj.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Image\Image.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Math\Math.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Math\Perlin.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Camera\Camera.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\FBO\FBO.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\GLFWwindow\Window.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Mesh\Mesh.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Model\TfmObject.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Model\Model.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Scene\Scene.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Shader\Shader.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Texture\Skybox.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Texture\Texture.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\VAO\VAO.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\AABB.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\BVH_Node.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Hitable.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Model2.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\MoveSphere.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Sphere.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Transform.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Triangle.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\TriMesh.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Dielectric.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Isotropic.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Lambertian.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Metal.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Scene\RTScene.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Texture\ConstTexture.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Texture\ImageTexture.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Texture\RTSkybox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonDefine.h" />
+    <ClInclude Include="GlobalDefines.h" />
+    <ClInclude Include="include\CppUtil\Basic\File.h" />
+    <ClInclude Include="include\CppUtil\Basic\HeapObj.h" />
+    <ClInclude Include="include\CppUtil\Basic\Image.h" />
+    <ClInclude Include="include\CppUtil\Basic\Math.h" />
+    <ClInclude Include="include\CppUtil\Basic\Perlin.h" />
+    <ClInclude Include="include\CppUtil\Basic\Ptr.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\Camera.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\FBO.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\Mesh.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\Model.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\Object.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\Scene.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\Shader.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\Skybox.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\Texture.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\TfmObject.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\VAO.h" />
+    <ClInclude Include="include\CppUtil\OpenGL\Window.h" />
+    <ClInclude Include="include\CppUtil\RTX\AABB.h" />
+    <ClInclude Include="include\CppUtil\RTX\BVH_Node.h" />
+    <ClInclude Include="include\CppUtil\RTX\ConstTexture.h" />
+    <ClInclude Include="include\CppUtil\RTX\Dielectric.h" />
+    <ClInclude Include="include\CppUtil\RTX\Hitable.h" />
+    <ClInclude Include="include\CppUtil\RTX\HitableVisitor.h" />
+    <ClInclude Include="include\CppUtil\RTX\ImageTexture.h" />
+    <ClInclude Include="include\CppUtil\RTX\Isotropic.h" />
+    <ClInclude Include="include\CppUtil\RTX\Lambertian.h" />
+    <ClInclude Include="include\CppUtil\RTX\Material.h" />
+    <ClInclude Include="include\CppUtil\RTX\MatVisitor.h" />
+    <ClInclude Include="include\CppUtil\RTX\Metal.h" />
+    <ClInclude Include="include\CppUtil\RTX\Model.h" />
+    <ClInclude Include="include\CppUtil\RTX\MoveSphere.h" />
+    <ClInclude Include="include\CppUtil\RTX\RTScene.h" />
+    <ClInclude Include="include\CppUtil\RTX\Texture.h" />
+    <ClInclude Include="include\CppUtil\RTX\Sphere.h" />
+    <ClInclude Include="include\CppUtil\RTX\TexVisitor.h" />
+    <ClInclude Include="include\CppUtil\RTX\SkyboxTexture.h" />
+    <ClInclude Include="include\CppUtil\RTX\Transform.h" />
+    <ClInclude Include="include\CppUtil\RTX\Triangle.h" />
+    <ClInclude Include="include\CppUtil\RTX\TriMesh.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="SceneTraversal.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
