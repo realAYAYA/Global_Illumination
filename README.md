@@ -1,11 +1,11 @@
 # Global_Illumination
-None
-OpenGL API
+None  
+OpenGL API  
 
-RayMarching
-blackhole,
-deferringShadering
+RayMarching  
+blackhole  
+deferringShadering  
 
-AABB
-Accleration Structs
-Materials
+AABB  
+Accleration Structs  
+Materials  
